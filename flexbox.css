@@ -1,0 +1,74 @@
+#main{
+    background: darkmagenta;
+    flex-direction: column;
+    height: 700px;
+    margin: 0 400px;
+    
+}
+.flex-container-row{
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    list-style: none;
+    width: 300px;
+    background: cadetblue;
+}
+
+.flex-item{
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    color:whitesmoke;
+    text-align: center;
+    margin: 5px;
+}
+
+/* Adicionando as propriedades para row e row-reverse no elemento flex box */
+.row{
+    flex-direction: row;    
+}
+
+.row li{
+    background: yellowgreen;
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+.row-reverse li{
+    background: cornsilk;
+    color: darkblue;
+}
+
+/* Fim 01 */
+
+
+/*  Adicionando as propriedades para column e column-reverse no elemento flex box */
+.flex-container-column{
+    margin: 20px;
+    padding: 15px;
+    display: flex;
+    list-style: none;    
+    background: cadetblue;
+}
+
+.column{
+    float: left;
+    flex-direction: column;
+}
+
+.column li{
+    background: cornflowerblue;
+}
+
+.column-reverse{
+    float: left;
+    flex-direction: column-reverse;
+}
+
+.column-reverse li{
+    background:crimson;
+}
+
