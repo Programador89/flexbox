@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="Fundamentos Flex-Flow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos - Flex Flow</title>
+
+    <style>
+      * {
+        font-family: "Courier New", Courier, monospace;
+        margin: 0;
+        padding: 0;
+      }
+      main {
+        width: 800px;
+        background-color: whitesmoke;
+        border: solid 2px greenyellow;
+        padding: 20px;
+        margin: 2% 20%;
+      }
+
+      p {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 600;
+        padding: 10px;
+      }
+
+      .title h1 {
+        padding: 10px;
+      }
+
+      .title h2 {
+        margin-top: 15px;
+        padding: 10px;
+      }
+
+      .flex-container {
+        display: flex;
+        border: solid 2px black;
+        margin: 5% 22%;
+        max-width: 500px;
+      }
+
+      .default {
+        flex-flow: row nowrap;
+      }
+
+      .wrap {
+        flex-flow: row wrap;
+      }
+
+      .wrap-reverse {
+        flex-flow: row wrap-reverse;
+      }
+
+      .nowrap {
+        flex-flow: row-reverse nowrap;
+      }
+
+      .item {
+        background-color: yellowgreen;
+        margin: 5px;
+        color: #ffff;
+        text-decoration: center;
+        width: 100px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header class="title">
+        <h1>Fundamentos - Flex Flow</h1>
+        <p>
+          O atributo flex flow funciona como um atalho para os atributos vistos
+          anteriormente, flex wrap e flex row.
+        </p>
+        <h2>Default: row & nowrap</h2>
+      </header>
+      <article class="flex-container defautl">
+        <section class="item">1</section>
+        <section class="item">2</section>
+        <section class="item">3</section>
+        <section class="item">4</section>
+        <section class="item">5</section>
+      </article>
+
+      <header class="title">
+        <h2>wrap: row & wrap</h2>
+      </header>
+      <article class="flex-container wrap">
+        <section class="item">1</section>
+        <section class="item">2</section>
+        <section class="item">3</section>
+        <section class="item">4</section>
+        <section class="item">5</section>
+      </article>
+
+      <header class="title">
+        <h2>wrap-reverse: row & wrap reverse</h2>
+      </header>
+      <article class="flex-container wrap-reverse">
+        <section class="item">1</section>
+        <section class="item">2</section>
+        <section class="item">3</section>
+        <section class="item">4</section>
+        <section class="item">5</section>
+      </article>
+
+      <header class="title">
+        <h2>row-reverse nowrap</h2>
+      </header>
+      <article class="flex-container nowrap">
+        <section class="item">1</section>
+        <section class="item">2</section>
+        <section class="item">3</section>
+        <section class="item">4</section>
+        <section class="item">5</section>
+        <section class="item">6</section>
+        <section class="item">7</section>
+      </article>
+    </main>
+  </body>
+</html>
