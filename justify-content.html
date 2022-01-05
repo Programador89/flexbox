@@ -6,31 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Justify Content</title>
-
-    <style>
-        .container {
-            display: flex;
-            max-width: 700px;
-            border: solid 2px limegreen;
-            margin: 0;
-        }
-
-        .item {
-            background-color: rgb(240, 226, 32);
-            margin: 5px;
-            text-align: center;
-        }
-
-        .flex-start {
-            justify-content: flex-start;
-        }
-
-        .flex-end{
-            justify-content: flex-end;
-        }
-
-    </style>
-
+    <link rel="stylesheet" href="./css/justify-content.css">
 </head>
 
 <body>
@@ -39,12 +15,36 @@
             <h1>Justify Content</h1>
         </header>
         
+        <h3>Flex-start</h3>
         <article class="container flex-start">
             <section class="item">1</section>
             <section class="item">2</section>
             <section class="item">3</section>
         </article>
+        <hr><br>
+        <h3>Flex-end</h3>
         <article class="container flex-end">
+            <section class="item">1</section>
+            <section class="item">2</section>
+            <section class="item">3</section>
+        </article>
+        <hr><br>
+        <h3>Flex-center</h3>
+        <article class="container flex-center">
+            <section class="item">1</section>
+            <section class="item">2</section>
+            <section class="item">3</section>
+        </article>
+        <hr><br>
+        <h3>Flex-space-between</h3>
+        <article class="container flex-space-between">
+            <section class="item">1</section>
+            <section class="item">2</section>
+            <section class="item">3</section>
+        </article>
+        <br><hr><br>
+        <h3>Flex-space-around</h3>
+        <article class="container flex-space-around">
             <section class="item">1</section>
             <section class="item">2</section>
             <section class="item">3</section>

@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    max-width: 700px;
+    border: solid 2px limegreen;
+    margin: 0;
+}
+
+.item {
+    background-color: rgb(240, 226, 32);
+    margin: 5px;
+    text-align: center;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end{
+    justify-content: flex-end;
+}   
+
+.flex-center {
+    justify-content: center;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+.flex-space-around {
+    justify-content: space-around;
+}
