@@ -1,8 +1,22 @@
+main {
+    width: 800px;
+    background-color: whitesmoke;
+    border: solid 1px grey;
+    padding: 10px 30px 50px 20px;
+    margin-left: 23%;
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+
 .container {
     display: flex;
     max-width: 700px;
     border: solid 2px limegreen;
-    margin: 0;
+    margin: 40px 0px;
 }
 
 .item {
@@ -10,6 +24,12 @@
     margin: 5px;
     text-align: center;
 }
+
+span {
+    background-color: wheat;
+    padding: 50px;
+}
+
 
 .flex-start {
     justify-content: flex-start;
@@ -29,4 +49,8 @@
 
 .flex-space-around {
     justify-content: space-around;
+}
+
+.column {
+    flex-direction: column;
 }
